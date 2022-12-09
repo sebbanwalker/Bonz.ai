@@ -1,4 +1,9 @@
-Responsivitet: 1920x1080-480x800
+Responsivitet: 1920x1080-480x800px, större och mindre skärmstorlekar har jag inte tagit hänsyn till.
+
+En huvudsaklig brytpunkt vid 1000px (Media query).
+
 För att återgå till landingssidan (hem) så klickar man på loggan.
+
 Man kan söka efter rum både genom att klicka på 'Rum' i nav-baren och att söka från landningssidan.
+
 För att se faciliteter så klickar man på 'Faciliteter' i nav-baren. 
