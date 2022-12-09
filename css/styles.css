@@ -1,5 +1,5 @@
 /* 
-    Denna sida är tänkt att stödja skärmstorlekar >=1920x1080 ända ned till 480x800px vilket är en av de mindre
+    Denna sida är tänkt att stödja skärmstorlekar från 1920x1080 ända ned till 480x800px vilket är en av de mindre
     mobilupplösningarna, mindre än så är inte responsiviteten tänkt att stödja.
 */
 
@@ -307,7 +307,7 @@ body {
     filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
 }
 
-/* Sökning av rum */
+/* Sökning och bokning av rum */
 
 .room__container {
     margin-top: 5rem;
@@ -419,6 +419,141 @@ body {
     margin-top: 0;
     text-align: center;
 }
+
+.room__bottom-spacing {
+    height: 5vw;
+    width: 100px;
+}
+
+/* Faciliteter */
+
+.facilities__container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.facilities {
+    box-shadow: 2px 2px 20px rgb(137, 137, 137);
+    width: 90vw;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.facilities--image {
+    width: 30vw;
+    height: 20rem;
+    object-fit: cover;
+    place-self: center;
+    margin-left: 0;
+    border-radius: 2px;
+}
+
+.facilities__content {
+    display: flex;
+    flex-direction: column;
+    height: 18rem;
+    margin-top: 1rem;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.facilities__content--title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+
+.facilities__content--description {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.facilities__content--more-info {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #99351A;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.facilities__content--bottom {
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    width: 50vw;
+    margin-top: 1rem;
+}
+
+.facilities__content--amenity {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 3rem;
+    justify-self: flex-start;
+}
+
+.facilities__content--book {
+    height: 2rem;
+    width: 12vw;
+    min-width: 80px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: #05402E;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.facilities__content--icon {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.facilities__content--icon-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.facilities__bottom-spacing {
+    height: 5vw;
+    width: 100px;
+}
+
+.facilities__image--container {
+    position: relative;
+    background-image: url('/assets/photos/facility.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    width: 100vw;
+    height: 0;
+    padding-top: 56.25%;
+    margin-top: -28px;
+}
+
 /* Media query som skiftar layout vid en skärmbredd över 1000px (Desktop) */
 
 @media (min-width: 1000px) {
@@ -521,4 +656,23 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* Sökning och bokning av rum */
+
+    .room__content--title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2rem;
+        margin-top: 2vw;
+    }
+
+    /* Faciliteter */
+
+    .facilities__content--title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2rem;
+        margin-top: 2vw;
+    }
+
 }
